@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib .h>
+#include <stdlib.h>
 using namespace std;
 
 struct nodo{
@@ -45,8 +45,8 @@ void listarPila(ptrPila p){
 void menu(){
 	cout<<"\tMenu de opciones"<<endl;
 	cout<<"1.Agregar"<<endl;
-	cout<<"2.Mostrar"<<endl;
-	cout<<"3.Eliminar"<<endl;
+	cout<<"2.Eliminar"<<endl;
+	cout<<"3.Mostrar"<<endl;
 	cout<<"4.Salir"<<endl;
 	cout<<"\tSelecione una opcion: "<<endl;
 }
@@ -70,11 +70,16 @@ int main(){
 				break;
 			case 3: 
 				cout<<"Listando pila"<<endl;
-				if(p != NULL{
+				if(p != NULL)
 					listarPila(p);
-				})
+				else 
+				cout<<"\tNo hay elementos"<<endl;
+				break;
 		}
-	}
+		cout<<endl<<endl;
+		system("pause"); system("cls");
+	} while(opc!=4);
+	return 0;
 }
 
 
